@@ -1,0 +1,30 @@
+Name - Олег
+Position - Менеджер з продажу
+PhoneNumber - +380501234567
+Email - o.ivanenko@example.com
+
+Name - Андрій
+Position - Механік
+PhoneNumber - +380671112233
+Email - a.petrov@example.com
+
+Name - Марина
+Position - Фінансовий аналітик
+PhoneNumber - +380933456789
+Email - m.kovalenko@example.com
+
+Name - Дмитро
+Position - Логіст
+PhoneNumber - +380668765432
+Email - d.shevchenko@example.com
+
+Name - Юлія
+Position - Маркетолог
+PhoneNumber - +380962345678
+Email - y.tkachenko@example.com
+
+Name - Ігор
+Position - Керівник відділу закупівель
+PhoneNumber - +380501112244
+Email - i.melnyk@example.com
+

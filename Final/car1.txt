@@ -1,0 +1,72 @@
+Brand - Toyota
+Year - 2020
+Model - Corolla
+Cost - 380.000
+Potential price - 450.000
+
+Brand - Ford
+Year - 2018
+Model - Focus
+Cost - 310.000
+Potential price - 365.000
+
+Brand - BMW
+Year - 2021
+Model - X3
+Cost - 810.000
+Potential price - 950.000
+
+Brand - Volkswagen
+Year - 2019
+Model - Passat
+Cost - 520.000
+Potential price - 590.000
+
+Brand - Honda
+Year - 2022
+Model - Civic
+Cost - 470.000
+Potential price - 540.000
+
+Brand - Audi
+Year - 2020
+Model - A4
+Cost - 925.000
+Potential price - 970.000
+
+Brand - Nissan
+Year - 2017
+Model - Qashqai
+Cost - 420.000
+Potential price - 480.000
+
+Brand - Tesla
+Year - 2023
+Model - Model 3
+Cost - 900.000
+Potential price - 950.000
+
+Brand - Kia
+Year - 2019
+Model - Sportage
+Cost - 480.000
+Potential price - 550.000
+
+Brand - Mercedes_Benz
+Year - 2022
+Model - E_Class
+Cost - 900.000
+Potential price - 950.000
+
+Brand - Renault
+Year - 2013
+Model - Megane
+Cost - 300.000
+Potential price - 415.000
+
+Brand - Audi
+Year - 2019
+Model - Q7
+Cost - 780.000
+Potential price - 825.000
+
