@@ -89,7 +89,8 @@ int people()
     string names = "people1.txt";
     bool run = true;
     while (run) {
-        cout << blue<<"\nМеню:"<<clearColor<<green<<" \n[1] Додавання співробітника\n[2] Видалення співробітника\n[3] Інформація про співробітників\n\
+        cout << blue<<"\nМеню:"<<clearColor<<green<<" \n[1] Додавання співробітника\n\
+[2] Видалення співробітника\n[3] Інформація про співробітників\n\
 [0] - Закінчити\nВаш вибір: "<<clearColor;
         int choice;
         cin >> choice;

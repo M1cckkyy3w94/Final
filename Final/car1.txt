@@ -70,3 +70,9 @@ Model - Q7
 Cost - 780.000
 Potential price - 825.000
 
+Brand - ВАЗ
+Year - 1988
+Model - 2101
+Cost - 15.000
+Potential price - 20.000
+

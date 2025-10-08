@@ -1,30 +1,29 @@
-Name - Олег
-Position - Менеджер з продажу
+Name - РћР»РµРі
+Position - РњРµРЅРµРґР¶РµСЂ Р· РїСЂРѕРґР°Р¶Сѓ
 PhoneNumber - +380501234567
 Email - o.ivanenko@example.com
 
-Name - Андрій
-Position - Механік
+Name - РђРЅРґСЂС–Р№
+Position - РњРµС…Р°РЅС–Рє
 PhoneNumber - +380671112233
 Email - a.petrov@example.com
 
-Name - Марина
-Position - Фінансовий аналітик
+Name - РњР°СЂРёРЅР°
+Position - Р¤С–РЅР°РЅСЃРѕРІРёР№ Р°РЅР°Р»С–С‚РёРє
 PhoneNumber - +380933456789
 Email - m.kovalenko@example.com
 
-Name - Дмитро
-Position - Логіст
+Name - Р”РјРёС‚СЂРѕ
+Position - Р›РѕРіС–СЃС‚
 PhoneNumber - +380668765432
 Email - d.shevchenko@example.com
 
-Name - Юлія
-Position - Маркетолог
+Name - Р®Р»С–СЏ
+Position - РњР°СЂРєРµС‚РѕР»РѕРі
 PhoneNumber - +380962345678
 Email - y.tkachenko@example.com
 
-Name - Ігор
-Position - Керівник відділу закупівель
+Name - Р†РіРѕСЂ
+Position - РљРµСЂС–РІРЅРёРє РІС–РґРґС–Р»Сѓ Р·Р°РєСѓРїС–РІРµР»СЊ
 PhoneNumber - +380501112244
 Email - i.melnyk@example.com
-

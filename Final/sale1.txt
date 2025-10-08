@@ -1,53 +1,60 @@
-Name - Олег
+Name - РћР»РµРі
 Car - BMW
 Model - X3
 DataSale - 2.3.2025
 PriseSale - 880.000
 
-Name - Олег
+Name - РћР»РµРі
 Car - Ford
 Model - Focus
 DataSale - 14.6.2025
 PriseSale - 347.000
 
-Name - Ігор
+Name - Р†РіРѕСЂ
 Car - Toyota
 Model - Corolla
 DataSale - 4.5.2025
 PriseSale - 410.000
 
-Name - Марина
+Name - РњР°СЂРёРЅР°
 Car - Nissan
 Model - Qashqai
 DataSale - 27.8.2025
 PriseSale - 910.000
 
-Name - Олег
+Name - РћР»РµРі
 Car - Mercedes_Benz
 Model - E_Class
 DataSale - 17.7.2025
 PriseSale - 980.000
 
-Name - Андрій
+Name - РђРЅРґСЂС–Р№
 Car - Nissan
 Model - Qashqai
 DataSale - 8.5.2025
 PriseSale - 510.000
 
-Name - Дмитро
+Name - Р”РјРёС‚СЂРѕ
 Car - Audi
 Model - Q7
 DataSale - 18.5.2025
 PriseSale - 810.000
 
-Name - Андрій
+Name - РђРЅРґСЂС–Р№
 Car - Audi
 Model - A4
 DataSale - 14.8.2025
 PriseSale - 930.000
 
-Name - Юлія
+Name - Р®Р»С–СЏ
 Car - Audi
 Model - Q7
 DataSale - 5.8.2025
 PriseSale - 825.000
+
+Name - РћР»РµРі
+Car - Ford
+Model - Focus
+DataSale - 5.5.2025
+PriseSale - 777.777
+
