@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 #include <string>
 #include <fstream>
@@ -18,20 +18,20 @@ using namespace std;
 void AddSale(vector <Sale>& arr, vector <Car>& arrCarr, vector <People>& arrPeoplee) {
     while (true) {
         string value;
-        cout << "Äëÿ äîäàâàíÿ ïðîäàæó íàòèñí³òü ENTER, ÿêùî íå òðåáà íàòèñí³ñòü *: ";
+        cout << "Ð”Ð»Ñ Ð´Ð¾Ð´Ð°Ð²Ð°Ð½Ñ Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ñƒ Ð½Ð°Ñ‚Ð¸ÑÐ½Ñ–Ñ‚ÑŒ ENTER, ÑÐºÑ‰Ð¾ Ð½Ðµ Ñ‚Ñ€ÐµÐ±Ð° Ð½Ð°Ñ‚Ð¸ÑÐ½Ñ–ÑÑ‚ÑŒ *: ";
         getline(cin, value);
         if (value == "*") {
             break;
         }
         Sale s;
-        cout << "\nÂèáåð³òü ñï³âðîá³òíèêà:\n";
+        cout << "\nÐ’Ð¸Ð±ÐµÑ€Ñ–Ñ‚ÑŒ ÑÐ¿Ñ–Ð²Ñ€Ð¾Ð±Ñ–Ñ‚Ð½Ð¸ÐºÐ°:\n";
         for (int i = 0; i < arrPeoplee.size(); i++)
             cout << i + 1 << ". " << arrPeoplee[i].name << endl;
         int numPerson;
         cin >> numPerson;
         s.nameSale = arrPeoplee[numPerson - 1];
 
-        cout << "Âèáåð³òü ìàøèíó:\n";
+        cout << "Ð’Ð¸Ð±ÐµÑ€Ñ–Ñ‚ÑŒ Ð¼Ð°ÑˆÐ¸Ð½Ñƒ:\n";
         vector<string> proverkaCar;
         for (int i = 0; i < arrCarr.size(); i++) {
             bool prov = false;
@@ -51,7 +51,7 @@ void AddSale(vector <Sale>& arr, vector <Car>& arrCarr, vector <People>& arrPeop
         string Brands = proverkaCar[numCar - 1];
         s.brandd.brand = Brands;
 
-        cout << "Âèáåð³òü ìîäåëü ìàøèíè:\n";
+        cout << "Ð’Ð¸Ð±ÐµÑ€Ñ–Ñ‚ÑŒ Ð¼Ð¾Ð´ÐµÐ»ÑŒ Ð¼Ð°ÑˆÐ¸Ð½Ð¸:\n";
         vector<string>models;
         for (int i = 0; i < arrCarr.size(); i++)
             if (arrCarr[i].brand == Brands) {
@@ -62,38 +62,38 @@ void AddSale(vector <Sale>& arr, vector <Car>& arrCarr, vector <People>& arrPeop
         cin >> numModel;
         s.modell.model = models[numModel-1];
 
-        cout << "Ââåä³òü äàòó ïðîäàæó: \nÄåíü: ";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð´Ð°Ñ‚Ñƒ Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ñƒ: \nÐ”ÐµÐ½ÑŒ: ";
         cin >> s.data.day;
-        cout << "\nÌ³ñÿöü: ";
+        cout << "\nÐœÑ–ÑÑÑ†ÑŒ: ";
         cin >> s.data.month;
-        cout << "\nÐ³ê: ";
+        cout << "\nÐ Ñ–Ðº: ";
         cin >> s.data.yearSale;
-        cout << "Ââåä³òü ðåàëüíó ö³íó ïðîäàæó: ";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ€ÐµÐ°Ð»ÑŒÐ½Ñƒ Ñ†Ñ–Ð½Ñƒ Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ñƒ: ";
         cin >> s.realPrice;
         arrSale.push_back(s);
-        cout << "Ïðîäàæ äîäàíî!\n";
+        cout << "ÐŸÑ€Ð¾Ð´Ð°Ð¶ Ð´Ð¾Ð´Ð°Ð½Ð¾!\n";
         cin.ignore();
     }
 }
 
 void coutSale(vector <Sale>& arr) {
-    cout << "\n²íôîðìàö³ÿ ïðî ïðîäàæ³!\n";
+    cout << "\nÐ†Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ñ–Ñ Ð¿Ñ€Ð¾ Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ñ–!\n";
     int count = 1;
     for (int i = 0; i < arr.size(); i++) {
         cout << endl << count << ". ";
-        cout << "Ïðîäàâ ñï³âðîá³òíèê: " << arr[i].nameSale.name << endl;
-        cout << "Ïðîäàíèé àâòîìîá³ëü: " << arr[i].brandd.brand <<" "<<arr[i].modell.model << endl;
-        cout << "Äàòà ïðîäàæó: " << arr[i].data.day <<"."<< arr[i].data.month<<"."<< arr[i].data.yearSale << endl;
+        cout << "ÐŸÑ€Ð¾Ð´Ð°Ð² ÑÐ¿Ñ–Ð²Ñ€Ð¾Ð±Ñ–Ñ‚Ð½Ð¸Ðº: " << arr[i].nameSale.name << endl;
+        cout << "ÐŸÑ€Ð¾Ð´Ð°Ð½Ð¸Ð¹ Ð°Ð²Ñ‚Ð¾Ð¼Ð¾Ð±Ñ–Ð»ÑŒ: " << arr[i].brandd.brand <<" "<<arr[i].modell.model << endl;
+        cout << "Ð”Ð°Ñ‚Ð° Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ñƒ: " << arr[i].data.day <<"."<< arr[i].data.month<<"."<< arr[i].data.yearSale << endl;
         cout << fixed << setprecision(3);
-        cout << "Ðåàëüíà ö³íà ïðîäàæó: " << arr[i].realPrice << " ãðí." << endl;
+        cout << "Ð ÐµÐ°Ð»ÑŒÐ½Ð° Ñ†Ñ–Ð½Ð° Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ñƒ: " << arr[i].realPrice << " Ð³Ñ€Ð½." << endl;
         cout << endl;
         count++;
     }
 }
 
 void DeleteSale(vector <Sale>& arr) {
-    cout << "\nÂèäàëåííÿ ïðîäàæó!\n";
-    cout << "ßêó õî÷åòå âèäàëèòè?\n";
+    cout << "\nÐ’Ð¸Ð´Ð°Ð»ÐµÐ½Ð½Ñ Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ñƒ!\n";
+    cout << "Ð¯ÐºÑƒ Ñ…Ð¾Ñ‡ÐµÑ‚Ðµ Ð²Ð¸Ð´Ð°Ð»Ð¸Ñ‚Ð¸?\n";
     int choice;
     cin >> choice;
     for (int i = 0; i < arr.size(); i++) {
@@ -101,13 +101,13 @@ void DeleteSale(vector <Sale>& arr) {
             arr.erase(arr.begin() + (choice - 1));
         }
     }
-    cout << "Óñï³øíî âèäàëåíî!\n";
+    cout << "Ð£ÑÐ¿Ñ–ÑˆÐ½Ð¾ Ð²Ð¸Ð´Ð°Ð»ÐµÐ½Ð¾!\n";
 }
 
 void perezapisSale(vector<Sale>& arr, string& fileName) {
     ofstream file(fileName, ios::trunc);
     if (!file) {
-        cout << "Íå âäàëîñÿ â³äêðèòè ôàéë!" << endl;
+        cout << "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¸ Ñ„Ð°Ð¹Ð»!" << endl;
         return;
     }
 
@@ -122,7 +122,7 @@ void perezapisSale(vector<Sale>& arr, string& fileName) {
         file << endl;
     }
 
-    cout << "Ôàéë îíîâëåí." << endl;
+    cout << "Ð¤Ð°Ð¹Ð» Ð¾Ð½Ð¾Ð²Ð»ÐµÐ½." << endl;
     file.close();
 }
 
@@ -132,12 +132,12 @@ int sale()
 
     cout << "\033[2J\033[1;1H";
 
-    cout << blue<<"=====Ïðîäàæ³=====\n"<<clearColor;
+    cout << blue<<"=====ÐŸÑ€Ð¾Ð´Ð°Ð¶Ñ–=====\n"<<clearColor;
     string namesSale = "sale1.txt";
     bool run = true;
     while (run) {
-        cout <<blue<< "\nÌåíþ:"<<clearColor<<green<<" \n[1] Äîäàâàííÿ ïðîäàæó\n[2] Âèäàëåííÿ ïðîäàæó\n[3] ²íôîðìàö³ÿ ïðî ïðîäàæ³\n\
-[0] - Çàê³í÷èòè\nÂàø âèá³ð: "<<clearColor;
+        cout <<blue<< "\nÐœÐµÐ½ÑŽ:"<<clearColor<<green<<" \n[1] Ð”Ð¾Ð´Ð°Ð²Ð°Ð½Ð½Ñ Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ñƒ\n[2] Ð’Ð¸Ð´Ð°Ð»ÐµÐ½Ð½Ñ Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ñƒ\n[3] Ð†Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ñ–Ñ Ð¿Ñ€Ð¾ Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ñ–\n\
+[0] - Ð—Ð°ÐºÑ–Ð½Ñ‡Ð¸Ñ‚Ð¸\nÐ’Ð°Ñˆ Ð²Ð¸Ð±Ñ–Ñ€: "<<clearColor;
         int choice;
         cin >> choice;
         switch (choice) {
@@ -157,7 +157,7 @@ int sale()
             coutSale(arrSale);
             break;
         default:
-            cout << "Òàêîãî âèáîðó íåìàº!";
+            cout << "Ð¢Ð°ÐºÐ¾Ð³Ð¾ Ð²Ð¸Ð±Ð¾Ñ€Ñƒ Ð½ÐµÐ¼Ð°Ñ”!";
             break;
         }
     }

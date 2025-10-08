@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 #include <string>
 #include <fstream>
@@ -19,46 +19,46 @@ void AddCar(vector <Car>& arr) {
     while (true) {
         string value;
         cin.ignore();
-        cout << "Äëÿ äîäàâàíÿ ìàøèíè íàòèñí³òü ENTER, ÿêùî íå òðåáà íàòèñí³ñòü *: ";
+        cout << "Ð”Ð»Ñ Ð´Ð¾Ð´Ð°Ð²Ð°Ð½Ñ Ð¼Ð°ÑˆÐ¸Ð½Ð¸ Ð½Ð°Ñ‚Ð¸ÑÐ½Ñ–Ñ‚ÑŒ ENTER, ÑÐºÑ‰Ð¾ Ð½Ðµ Ñ‚Ñ€ÐµÐ±Ð° Ð½Ð°Ñ‚Ð¸ÑÐ½Ñ–ÑÑ‚ÑŒ *: ";
         getline(cin, value);
         if (value == "*") {
             break;
         }
         Car p;
-        cout << "\nÂâåä³òü íàçâó âèðîáíèêà: \n";
+        cout << "\nÐ’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð½Ð°Ð·Ð²Ñƒ Ð²Ð¸Ñ€Ð¾Ð±Ð½Ð¸ÐºÐ°: \n";
         cin >> p.brand;
-        cout << "Ââåä³òü ð³ê âèïóñêó: \n";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ€Ñ–Ðº Ð²Ð¸Ð¿ÑƒÑÐºÑƒ: \n";
         cin >> p.year;
-        cout << "Ââåä³òü ìîäåëü ìàøèíè: \n";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð¼Ð¾Ð´ÐµÐ»ÑŒ Ð¼Ð°ÑˆÐ¸Ð½Ð¸: \n";
         cin >> p.model;
-        cout << "Ââåä³òü ñîá³âàðò³ñòü: \n";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÑÐ¾Ð±Ñ–Ð²Ð°Ñ€Ñ‚Ñ–ÑÑ‚ÑŒ: \n";
         cin >> p.cost;
-        cout << "Ââåä³òü ïîòåíö³éíó ö³íó ïðîäàæó: \n";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð¿Ð¾Ñ‚ÐµÐ½Ñ†Ñ–Ð¹Ð½Ñƒ Ñ†Ñ–Ð½Ñƒ Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ñƒ: \n";
         cin >> p.price;
         arr.push_back(p);
-        cout << "Äàí³ óñï³øíî çàïèñàí³!\n";
+        cout << "Ð”Ð°Ð½Ñ– ÑƒÑÐ¿Ñ–ÑˆÐ½Ð¾ Ð·Ð°Ð¿Ð¸ÑÐ°Ð½Ñ–!\n";
     }
 }
 
 void coutCar(vector <Car>& arr) {
-    cout << "\n²íôîðìàö³ÿ ïðî ìàøèíè!\n";
+    cout << "\nÐ†Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ñ–Ñ Ð¿Ñ€Ð¾ Ð¼Ð°ÑˆÐ¸Ð½Ð¸!\n";
     int count = 1;
     for (int i = 0; i < arr.size(); i++) {
         cout << endl << count << ". ";
-        cout << "Íàçâà âèðîáíèêà: " << arr[i].brand << endl;
-        cout << "Ð³ê âèïóñêó: " << arr[i].year << endl;
-        cout << "Ìîäåëü ìàøèíè: " << arr[i].model << endl;
+        cout << "ÐÐ°Ð·Ð²Ð° Ð²Ð¸Ñ€Ð¾Ð±Ð½Ð¸ÐºÐ°: " << arr[i].brand << endl;
+        cout << "Ð Ñ–Ðº Ð²Ð¸Ð¿ÑƒÑÐºÑƒ: " << arr[i].year << endl;
+        cout << "ÐœÐ¾Ð´ÐµÐ»ÑŒ Ð¼Ð°ÑˆÐ¸Ð½Ð¸: " << arr[i].model << endl;
         cout << fixed << setprecision(3);
-        cout << "Ñîá³âàðò³ñòü: " << arr[i].cost << endl;
-        cout << "Ïîòåíö³éíà ö³íà ïðîäàæó: " << arr[i].price << endl;
+        cout << "Ð¡Ð¾Ð±Ñ–Ð²Ð°Ñ€Ñ‚Ñ–ÑÑ‚ÑŒ: " << arr[i].cost << endl;
+        cout << "ÐŸÐ¾Ñ‚ÐµÐ½Ñ†Ñ–Ð¹Ð½Ð° Ñ†Ñ–Ð½Ð° Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ñƒ: " << arr[i].price << endl;
         cout << endl;
         count++;
     }
 }
 
 void DeleteCar(vector <Car>& arr) {
-    cout << "\nÂèäàëåííÿ ìàøèíè!\n";
-    cout << "ßêó õî÷åòå âèäàëèòè?\n";
+    cout << "\nÐ’Ð¸Ð´Ð°Ð»ÐµÐ½Ð½Ñ Ð¼Ð°ÑˆÐ¸Ð½Ð¸!\n";
+    cout << "Ð¯ÐºÑƒ Ñ…Ð¾Ñ‡ÐµÑ‚Ðµ Ð²Ð¸Ð´Ð°Ð»Ð¸Ñ‚Ð¸?\n";
     int choice;
     cin >> choice;
     for (int i = 0; i < arr.size(); i++) {
@@ -66,13 +66,13 @@ void DeleteCar(vector <Car>& arr) {
             arr.erase(arr.begin() + (choice - 1));
         }
     }
-    cout << "Óñï³øíî âèäàëåíî!\n";
+    cout << "Ð£ÑÐ¿Ñ–ÑˆÐ½Ð¾ Ð²Ð¸Ð´Ð°Ð»ÐµÐ½Ð¾!\n";
 }
 
 void perezapisCar(vector<Car>& arr, string& fileName) {
     ofstream file(fileName, ios::trunc);
     if (!file) {
-        cout << "Íå âäàëîñÿ â³äêðèòè ôàéë!" << endl;
+        cout << "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¸ Ñ„Ð°Ð¹Ð»!" << endl;
     }
     
     file << fixed << setprecision(3);
@@ -84,7 +84,7 @@ void perezapisCar(vector<Car>& arr, string& fileName) {
             << "Cost - " << c.cost << endl
             << "Potential price - " << c.price << endl << endl;
     }
-    cout << "Ôàéë îíîâëåí.\n";
+    cout << "Ð¤Ð°Ð¹Ð» Ð¾Ð½Ð¾Ð²Ð»ÐµÐ½.\n";
     file.close();
 }
 
@@ -94,12 +94,12 @@ int car()
 
     cout << "\033[2J\033[1;1H";
 
-    cout <<blue<< "=====Ìàøèíè=====\n"<<clearColor;
+    cout <<blue<< "=====ÐœÐ°ÑˆÐ¸Ð½Ð¸=====\n"<<clearColor;
     string namesCar = "car1.txt";
     bool run = true;
     while (run) {
-        cout <<blue<< "\nÌåíþ:"<<clearColor<<green<<"\n[1] Äîäàâàííÿ ìàøèíè\n[2] Âèäàëåííÿ ìàøèíè\n[3] ²íôîðìàö³ÿ ïðî ìàøèíè\n\
-[0] - Çàê³í÷èòè\nÂàø âèá³ð: "<<clearColor;
+        cout <<blue<< "\nÐœÐµÐ½ÑŽ:"<<clearColor<<green<<"\n[1] Ð”Ð¾Ð´Ð°Ð²Ð°Ð½Ð½Ñ Ð¼Ð°ÑˆÐ¸Ð½Ð¸\n[2] Ð’Ð¸Ð´Ð°Ð»ÐµÐ½Ð½Ñ Ð¼Ð°ÑˆÐ¸Ð½Ð¸\n[3] Ð†Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ñ–Ñ Ð¿Ñ€Ð¾ Ð¼Ð°ÑˆÐ¸Ð½Ð¸\n\
+[0] - Ð—Ð°ÐºÑ–Ð½Ñ‡Ð¸Ñ‚Ð¸\nÐ’Ð°Ñˆ Ð²Ð¸Ð±Ñ–Ñ€: "<<clearColor;
         int choice;
         cin >> choice;
         switch (choice) {
@@ -119,7 +119,7 @@ int car()
             coutCar(arrCar);
             break;
         default:
-            cout << "Òàêîãî âèáîðó íåìàº!";
+            cout << "Ð¢Ð°ÐºÐ¾Ð³Ð¾ Ð²Ð¸Ð±Ð¾Ñ€Ñƒ Ð½ÐµÐ¼Ð°Ñ”!";
             break;
         }
     }

@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 #include <string>
 #include <fstream>
@@ -18,41 +18,41 @@ void AddPeople(vector <People>& arr) {
     while (true) {
         string value;
         cin.ignore();
-        cout << "Äëÿ äîäàâàíÿ ñï³âðîá³òíèêà íàòèñí³òü ENTER, ÿêùî íå òðåáà íàòèñí³ñòü *: ";
+        cout << "Ð”Ð»Ñ Ð´Ð¾Ð´Ð°Ð²Ð°Ð½Ñ ÑÐ¿Ñ–Ð²Ñ€Ð¾Ð±Ñ–Ñ‚Ð½Ð¸ÐºÐ° Ð½Ð°Ñ‚Ð¸ÑÐ½Ñ–Ñ‚ÑŒ ENTER, ÑÐºÑ‰Ð¾ Ð½Ðµ Ñ‚Ñ€ÐµÐ±Ð° Ð½Ð°Ñ‚Ð¸ÑÐ½Ñ–ÑÑ‚ÑŒ *: ";
         getline(cin, value);
         if (value == "*") {
             break;
         }
         People p;
-        cout << "\nÂâåä³òü ³ì'ÿ ñï³âðîá³òíèêà: \n";
+        cout << "\nÐ’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ–Ð¼'Ñ ÑÐ¿Ñ–Ð²Ñ€Ð¾Ð±Ñ–Ñ‚Ð½Ð¸ÐºÐ°: \n";
         cin >> p.name;
-        cout << "Ââåä³òü ïîñàäó ñï³âðîá³òíèêà: \n";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð¿Ð¾ÑÐ°Ð´Ñƒ ÑÐ¿Ñ–Ð²Ñ€Ð¾Ð±Ñ–Ñ‚Ð½Ð¸ÐºÐ°: \n";
         cin >> p.posada;
-        cout << "Ââåä³òü íîìåð òåëåôîíó: \n";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð½Ð¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ñƒ: \n";
         cin >> p.phoneNumb;
-        cout << "Ââåä³òü email: \n";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ email: \n";
         cin >> p.email;
         arr.push_back(p);
-        cout << "Äàí³ óñï³øíî çàïèñàí³!\n";
+        cout << "Ð”Ð°Ð½Ñ– ÑƒÑÐ¿Ñ–ÑˆÐ½Ð¾ Ð·Ð°Ð¿Ð¸ÑÐ°Ð½Ñ–!\n";
     }
 }
 
 void coutPeople(vector <People>& arr) {
-    cout << "\n²íôîðìàö³ÿ ïðî ñï³âðîá³òíèê³â!\n";
+    cout << "\nÐ†Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ñ–Ñ Ð¿Ñ€Ð¾ ÑÐ¿Ñ–Ð²Ñ€Ð¾Ð±Ñ–Ñ‚Ð½Ð¸ÐºÑ–Ð²!\n";
     int count = 1;
     for (int i = 0; i < arr.size(); i++) {
         cout<<endl << count << ". ";
-        cout << "²ì'ÿ: " << arr[i].name << endl;
-        cout << "Ïîñàäà: " << arr[i].posada << endl;
-        cout << "Íîìåð òåëåôîíó: " << arr[i].phoneNumb << endl;
+        cout << "Ð†Ð¼'Ñ: " << arr[i].name << endl;
+        cout << "ÐŸÐ¾ÑÐ°Ð´Ð°: " << arr[i].posada << endl;
+        cout << "ÐÐ¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ñƒ: " << arr[i].phoneNumb << endl;
         cout << "Email: " << arr[i].email << endl;
         count++;
     }
 }
 
 void DeletePeople(vector <People>& arr) {
-    cout << "\nÂèäàëåííÿ ñï³âðîá³òíèê³â!\n";
-    cout << "Êîãî õî÷åòå âèäàëèòè?\n";
+    cout << "\nÐ’Ð¸Ð´Ð°Ð»ÐµÐ½Ð½Ñ ÑÐ¿Ñ–Ð²Ñ€Ð¾Ð±Ñ–Ñ‚Ð½Ð¸ÐºÑ–Ð²!\n";
+    cout << "ÐšÐ¾Ð³Ð¾ Ñ…Ð¾Ñ‡ÐµÑ‚Ðµ Ð²Ð¸Ð´Ð°Ð»Ð¸Ñ‚Ð¸?\n";
     int choice;
     cin >> choice;
     for (int i = 0; i < arr.size(); i++) {
@@ -60,13 +60,13 @@ void DeletePeople(vector <People>& arr) {
             arr.erase(arr.begin() + (choice - 1));
         }
     }
-    cout << "Óñï³øíî âèäàëåíî!\n";
+    cout << "Ð£ÑÐ¿Ñ–ÑˆÐ½Ð¾ Ð²Ð¸Ð´Ð°Ð»ÐµÐ½Ð¾!\n";
 }
 
 void perezapisPeople(vector<People>& arr, string& fileName) {
     ofstream file(fileName, ios::trunc);
     if (!file) {
-        cout << "Íå âäàëîñÿ â³äêðèòè ôàéë" << endl;
+        cout << "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¸ Ñ„Ð°Ð¹Ð»" << endl;
     }
 
     for (const People& p : arr) {
@@ -75,7 +75,7 @@ void perezapisPeople(vector<People>& arr, string& fileName) {
             << "PhoneNumber - " << p.phoneNumb << endl
             << "Email - " << p.email << endl << endl;
     }
-    cout << "Ôàéë îíîâëåí.\n";
+    cout << "Ð¤Ð°Ð¹Ð» Ð¾Ð½Ð¾Ð²Ð»ÐµÐ½.\n";
     file.close();
 }
 
@@ -85,12 +85,12 @@ int people()
 
     cout << "\033[2J\033[1;1H";
 
-    cout << blue<<"=====Ñï³âðîá³òíèêè=====\n"<<clearColor;
+    cout << blue<<"=====Ð¡Ð¿Ñ–Ð²Ñ€Ð¾Ð±Ñ–Ñ‚Ð½Ð¸ÐºÐ¸=====\n"<<clearColor;
     string names = "people1.txt";
     bool run = true;
     while (run) {
-        cout << blue<<"\nÌåíþ:"<<clearColor<<green<<" \n[1] Äîäàâàííÿ ñï³âðîá³òíèêà\n[2] Âèäàëåííÿ ñï³âðîá³òíèêà\n[3] ²íôîðìàö³ÿ ïðî ñï³âðîá³òíèê³â\n\
-[0] - Çàê³í÷èòè\nÂàø âèá³ð: "<<clearColor;
+        cout << blue<<"\nÐœÐµÐ½ÑŽ:"<<clearColor<<green<<" \n[1] Ð”Ð¾Ð´Ð°Ð²Ð°Ð½Ð½Ñ ÑÐ¿Ñ–Ð²Ñ€Ð¾Ð±Ñ–Ñ‚Ð½Ð¸ÐºÐ°\n[2] Ð’Ð¸Ð´Ð°Ð»ÐµÐ½Ð½Ñ ÑÐ¿Ñ–Ð²Ñ€Ð¾Ð±Ñ–Ñ‚Ð½Ð¸ÐºÐ°\n[3] Ð†Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ñ–Ñ Ð¿Ñ€Ð¾ ÑÐ¿Ñ–Ð²Ñ€Ð¾Ð±Ñ–Ñ‚Ð½Ð¸ÐºÑ–Ð²\n\
+[0] - Ð—Ð°ÐºÑ–Ð½Ñ‡Ð¸Ñ‚Ð¸\nÐ’Ð°Ñˆ Ð²Ð¸Ð±Ñ–Ñ€: "<<clearColor;
         int choice;
         cin >> choice;
         switch (choice) {
@@ -110,7 +110,7 @@ int people()
             coutPeople(arrPeople);
             break;
         default:
-            cout << "Òàêîãî âèáîðó íåìàº!";
+            cout << "Ð¢Ð°ÐºÐ¾Ð³Ð¾ Ð²Ð¸Ð±Ð¾Ñ€Ñƒ Ð½ÐµÐ¼Ð°Ñ”!";
             break;
         }
     }
